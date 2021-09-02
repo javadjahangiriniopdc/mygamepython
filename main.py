@@ -22,8 +22,12 @@ while run:
     B = randint(0, 255)
     x = randint(0, 500)
     y = randint(0, 500)
+    # pygame.draw.line(surface, color, start_pos, end_pos, width)
+    # pygame.draw.circle(window, colour, circle_x_ & _y, circle_radius, border_width)
+    # rectangle = pygame.Rect(x_pos, y_pos, width, height)
 
     pygame.draw.circle(display, (R, G, B), (400, 300), 40, 5)
+
     pygame.draw.rect(display, (255, 0, 0), (x, y, 40, 40))
 
     text = myfont.render('text', False, (R, G, B))
